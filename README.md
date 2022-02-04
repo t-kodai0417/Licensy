@@ -18,13 +18,13 @@
 
 ## Quickstart bot usage
 
-ボットの
+ボットの機能を使うために、管理者権限を渡してください。
 
-Default prefix is `!`
+デフォルトのプレフィックスは `!`です。
 
-Default license expiration time is 720h aka 30 days.
+aaaaaa**((デフォルトのライセンスの有効期限は30日
 
-After the bot joined the guild call:
+asddddAfter the bot joined the guild call:d
 
 ```bash
 !default_role @role_here
