@@ -2,10 +2,10 @@ import sys
 import logging
 import asyncio
 import traceback
-
+from server import keep_alive
 import discord
 from discord.ext import commands
-
+import os
 from helpers.misc import maximize_size
 from config_handler import ConfigHandler
 from database_handler import DatabaseHandler
@@ -19,7 +19,7 @@ root_logger.addHandler(logger_handlers.get_console_handler())
 root_logger.addHandler(logger_handlers.get_file_handler())
 logger = logging.getLogger("discord")
 logger.setLevel(logging.WARNING)
-
+keep_alive()
 startup_extensions = [
     "licenses",
     "bot_owner_commands",
@@ -126,5 +126,6 @@ if __name__ == "__main__":
             root_logger.error(f"{exc} Failed to load extension {cog_path}")
             traceback_msg = traceback.format_exception(etype=type(e), value=e, tb=e.__traceback__)
             root_logger.warning(traceback_msg)
-
-    bot.run(bot.config["token"])
+    getenv3=os.getenv("TOKEN")
+    bot.run(f"{getenv3}")
+    
