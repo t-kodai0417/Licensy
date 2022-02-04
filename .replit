@@ -1,1 +1,2 @@
 run = "bash main.sh"
+language = "bash"
