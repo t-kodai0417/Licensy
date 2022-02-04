@@ -14,7 +14,8 @@ from helpers.converters import positive_integer, license_duration
 from helpers.errors import RoleNotFound, DatabaseMissingData, GuildNotFound
 from helpers.embed_handler import success, warning, failure, info, simple_embed
 from helpers.licence_helper import construct_expiration_date, get_remaining_time, get_current_time
-
+import time
+import math
 logger = logging.getLogger(__name__)
 
 
@@ -656,6 +657,18 @@ class LicenseHandler(commands.Cog):
                f"Please update it.")
         await ctx.send(embed=failure(msg))
 
+    @commands.command()
+    async def one_month(self,ctx):
+      aaa=time.time()
+      aaaa=aaa+2592000-172800
+      aa2=math.floor(aaaa)
+      await ctx.send(f"<t:{aa2}:R>")
+    @commands.command()
+    async def lifetime(self,ctx):
+      aaa=time.time()
+      aaaa=aaa+6307200000
+      aa2=math.floor(aaaa)
+      await ctx.send(f"<t:{aa2}:R>")
 
 def setup(bot):
     bot.add_cog(LicenseHandler(bot))
