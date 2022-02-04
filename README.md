@@ -22,7 +22,7 @@
 
 デフォルトのプレフィックスは `!`です。
 
-aaaaaa**((デフォルトのライセンスの有効期限は30日
+デフォルトのライセンスの有効期限は30日
 
 asddddAfter the bot joined the guild call:d
 
