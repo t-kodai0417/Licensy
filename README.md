@@ -9,9 +9,15 @@
 [![License AGPL3](https://img.shields.io/github/license/albertopoljak/Licensy?color=red)](LICENSE.md)
 
 # Replitで実行可能にしたLicensy.
-Replitでtokenを入力＼
+Replitでtokenをenvに入力するだけで使えます。
 
-# 
+
+# Replitでの設定
+ ## main.shで色々動かすので、Bashにしてください。普通にこのリポジトリをインポートすればBashになると思います。
+
+
+
+##ここから下は公式のReadMeとほぼ一緒です。
 
 # サブスクリプションで役割の有効期限を簡単に管理
 ライセンスのコードを入力することでロールを付与可能。
