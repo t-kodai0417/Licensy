@@ -8,30 +8,11 @@
 [![Python 3.6+](https://img.shields.io/badge/python-3.6%2B-blue)](#)
 [![License AGPL3](https://img.shields.io/github/license/albertopoljak/Licensy?color=red)](LICENSE.md)
 
-Replitで実行可能にしたLicensy.
+# Replitで実行可能にしたLicensy.
 
-After a long wait from support I finally got my account BrainDead#6105 back.
 
-However the damage has been done and I do not want to host the bot annymore.
-
-You can use this source to host it yourself or find someone else who is hosting it (remember that the bot does NOT need admin).
-
-For any questions or for getting your old data back contact me on Discord.
-
-# Licensy - easily manage expiration of roles with subscriptions!
-
-Generate license keys that, when redeemed by a member, will add a certain role to member
-that will last for certain time.
-
-Each license is tied to a certain role and certain duration.
-
-When member redeems the license he will get that role for that certain duration.
-
-You can make all of your roles subscribable and each license can have different expiration date.
-
-Members can have unlimited subscriptions active at the same time! (only limited by the Discord role limit per member which is 250).
-
-Works independently with multiple guilds.
+# サブスクリプションで役割の有効期限を簡単に管理
+ライセンスのコードを入力することでロールを付与可能。
 
 ## Quickstart bot usage
 
