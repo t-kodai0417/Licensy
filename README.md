@@ -13,10 +13,12 @@
 
 # サブスクリプションで役割の有効期限を簡単に管理
 ライセンスのコードを入力することでロールを付与可能。
+複数のサーバーで独立して動作します。
+
 
 ## Quickstart bot usage
 
-For full bot usage make sure you have the **administrator** guild permission (or guild owner).
+ボットの
 
 Default prefix is `!`
 
