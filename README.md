@@ -22,41 +22,23 @@
 
 デフォルトのプレフィックスは `!`です。
 
-デフォルトのライセンスの有効期限は30日
+デフォルトのライセンスの有効期限は**30日**(720時間)です。
 
-asddddAfter the bot joined the guild call:d
 
-```bash
-!default_role @role_here
-!generate 5
-```
-
-First line will set **@role_here** as default guild role.
-
-Second will generate 5 licenses, and as you can see only 5 is a argument so the 
-command will use **default** guild role (previously set to **@role_here**) and **default** expiration 
-date (which is initially set to 720h aka 30days upon guild join).
-
-If you want to use `!generate` command in some other way (that doesn't rely on using
-default guild data but relies on passed arguments) call `!help generate` to see full explanation 
-on how to use it.
-
-Quick example for custom `!generate` arguments:
-
+`!generate`コマンドを利用して、期限付きでロールが取れるライセンスをジェネレートすることができます。
+(例)
 ```
 !generate 10 @subscription 1m
-!generate 5 @supporter 1w
 ```
 
-This will generate 10 licenses for role `@subscription` in duration of 1 month and 5 licenses for role `@supporter` in
-duration of 1 week.
+この場合だと、 `@subscription` ロールが1ヶ月だけ持てるライセンスを5個ジェネレートすることができます。
+詳しくは公式のReadMeを見てください。
 
-In general these 2 are your friends:
+n general these 2 are your friends:
 
 - Call `!help` to see available commands.
 Note that you will not see commands that you don't have the permission for.
 Example non-admin members will not see admin commands listed when calling help.
-
 - Call `!help command_name` to see additional help for that specific command.
 Every command is properly documented.
 
