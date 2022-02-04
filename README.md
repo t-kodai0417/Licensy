@@ -9,14 +9,16 @@
 [![License AGPL3](https://img.shields.io/github/license/albertopoljak/Licensy?color=red)](LICENSE.md)
 
 # Replitで実行可能にしたLicensy.
+Replitでtokenを入力＼
 
+# 
 
 # サブスクリプションで役割の有効期限を簡単に管理
 ライセンスのコードを入力することでロールを付与可能。
 複数のサーバーで独立して動作します。
 
 
-## Quickstart bot usage
+## クイックスタート
 
 ボットの機能を使うために、管理者権限を渡してください。
 
@@ -34,103 +36,7 @@
 この場合だと、 `@subscription` ロールが1ヶ月だけ持てるライセンスを5個ジェネレートすることができます。
 詳しくは公式のReadMeを見てください。
 
-n general these 2 are your friends:
 
-- Call `!help` to see available commands.
-Note that you will not see commands that you don't have the permission for.
-Example non-admin members will not see admin commands listed when calling help.
-- Call `!help command_name` to see additional help for that specific command.
-Every command is properly documented.
-
-
-Optional (so you have more information):
-
-```bash
-!guild_info
-!faq
-```
-
-For any other questions/help/suggestions/anything call `!support` and join the support server :)
-
-You can also join it from this github page, click on the icon at the top of this readme.
-
-## Permissions needed
-
-Note that even if bot has all of these permission he might still not be able to manage some roles:
-
-- Remember that bots role has to be **higher** in role hierarchy than the managed members top role.
-Meaning it can only manage roles **below** it's own role in hierarchy.
-
-Bot needs these permissions to operate:
-
-```bash
-read_messages=True
-```
-- Needed so bot can see commands being called, otherwise nothing will happen
-when using a command.
-
-```bash
-send_messages=True
-```
-- For sending feedback to guild (success, failure, errors, info)
-
-```bash
-manage_roles=True
-```
-- For actually adding/removing licensed roles from members.
-
-```bash
-manage_messages=True
-```
-- In case there is error while using command that exposes the license your original 
-message that is showing license will get deleted to minimize chances of stealing.
-This happens for example if you redeem license for a role you **already** have.
-
-## Requirements for source
-
-You need Python 3.6 or later and packages from `requirements.txt`
-
-In Ubuntu, Mint and Debian you can install Python 3 like this:
-
-    $ sudo apt-get install python3 python3-pip
-
-For other Linux flavors, macOS and Windows, packages are available at
-
-  http://www.python.org/getit/
-
-## Quickstart source code
-
-```bash
-$ cd Licensy
-$ pip install -r requirements.txt
-```
-
-Note that discord.py version that was used in development is 1.2.5
-, anything above that (except for mayor version changes) should work.
-
-Nevertheless for compatibility reasons the `requirements.txt` will target specifically v1.2.5
-but if you are sure that there are no breaking changes in future version feel free to update.
-
-Before running the bot edit the `config.json` found in the root directory.
-Adding the token is the most important thing.
-
-After that you are ready to run it:
-
-```bash
-$ python3 bot.py
-```
-
-Upon startup the bot will create what it needs (if it's missing), this includes:
-log file and database file, including folders for them.
-
-Invite the bot to any guild, it will create database guild entry upon joining.
-
-Further steps on how to use the bot are in [Quickstart bot usage](#quickstart-bot-usage)
-
-## Authors
-
-* **[Joseph Kim](https://github.com/KimchiTastesGood)** - *Original bot and idea*
-* **[Braindead](https://github.com/albertopoljak)** - *New bot redesign based on original idea*
 
 ## License
 
