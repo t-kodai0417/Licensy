@@ -8,6 +8,7 @@
 [![Python 3.6+](https://img.shields.io/badge/python-3.6%2B-blue)](#)
 [![License AGPL3](https://img.shields.io/github/license/albertopoljak/Licensy?color=red)](LICENSE.md)
 
+Replitで実行可能にしたLicensy.
 After a long wait from support I finally got my account BrainDead#6105 back.
 
 However the damage has been done and I do not want to host the bot annymore.
