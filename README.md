@@ -44,7 +44,7 @@ Replitでtokenをenvに入力するだけで使えます。
 `!generate`コマンドを利用して、期限付きでロールが取れるライセンスをジェネレートすることができます。
 (例)
 ```
-!generate 10 @subscription 1m
+!generate 5 @subscription 1m
 ```
 
 この場合だと、 `@subscription` ロールが1ヶ月だけ持てるライセンスを5個ジェネレートすることができます。
