@@ -10,6 +10,8 @@
 
 # Replitで実行可能にしたLicensy.
 Replitでtokenをenvに入力するだけで使えます。
+以下のボタンからforkして使用してください
+[![Run on Repl.it](https://replit.com/badge/github/t-kodai0417/Replit-Licensy)](https://replit.com/github/t-kodai0417/Replit-Licensy)
 
 
 # Replitでの設定
